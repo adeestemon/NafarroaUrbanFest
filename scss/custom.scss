@@ -1,0 +1,105 @@
+// Custom.scss
+@import "custom-variables.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/*Menú de navegación*/
+.bg-diagonal-gradient {
+    padding: 0.5rem;
+    background: $cabecera;
+    color: #fff;
+    min-height: 100vh;
+    margin-top: -50px;
+}
+
+// Clases personalizadas
+.header-hero {
+    margin-top: 6rem;
+    margin-left: 3rem;
+    font-size: $hero-font-size;
+    font-family: $font-family-hero;
+    line-height: $line-height-hero;
+}
+
+.header-sub {
+    margin-left: 3rem;
+    font-size: $font-size-lg;
+
+}
+
+.cristal {
+    background-color: $menu-color;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
+    border-radius: 50px;
+    padding: 0.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-capsula {
+    background-color: $menu-color;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    padding: 0.25rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+.selector-idioma {
+    .btn {
+        background-color: $menu-color;
+        border-radius: 50px;
+        backdrop-filter: blur($blur-intensity);
+        -webkit-backdrop-filter: blur($blur-intensity);
+        color: white;
+    }
+
+    .dropdown-menu {
+        background-color: $menu-color;
+        backdrop-filter: blur($blur-intensity);
+        -webkit-backdrop-filter: blur($blur-intensity);
+        border-radius: 50px;
+        padding: 0.5rem 0;
+        min-width: 100%;
+
+
+
+        .dropdown-item {
+            color: white;
+            padding: 0.3rem 1rem;
+            font-weight: bold;
+
+            &:hover,
+            &:focus {
+                background-color: rgba(255, 255, 255, 0.5);
+                color: #000;
+            }
+        }
+    }
+}
+
+
+.bg-burdeos {
+    background-color: $burdeos;
+
+}
+
+.sticky-separado {
+    top: 20px;
+    margin-top: 0;
+}
