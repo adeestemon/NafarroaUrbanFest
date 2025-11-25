@@ -19829,20 +19829,22 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0.5rem;
   background: linear-gradient(165deg, #111 10%, #562134 40%, #111 65%);
   color: #fff;
-  min-height: 100vh;
+  min-height: 80vh;
   margin-top: -50px;
 }
 
 .header-hero {
+  text-align: left;
   margin-top: 6rem;
-  margin-left: 3rem;
+  margin-left: 5%;
   font-size: clamp(1rem, 15vw, 220px);
   font-family: "Aupa", sans-serif;
   line-height: 0.8;
 }
 
 .header-sub {
-  margin-left: 3rem;
+  text-align: left;
+  margin-left: 5%;
   font-size: 1.25rem;
 }
 
@@ -19904,4 +19906,32 @@ a.text-dark:hover, a.text-dark:focus {
 .sticky-separado {
   top: 20px;
   margin-top: 0;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1000px) {
+  .bg-diagonal-gradient {
+    min-height: 60vh;
+  }
+}
+@media (max-width: 764px) {
+  /* Centra los elementos de texto */
+  .header-hero,
+  .header-sub {
+    text-align: center;
+    margin-left: 0%;
+  }
+  /* Regla clave: Centra el contenedor del botón en pantallas medianas y pequeñas */
+  .button-col-align {
+    justify-content: center !important;
+  }
+}
+@media (max-width: 576px) {
+  .bg-diagonal-gradient {
+    min-height: 60vh;
+  }
 }

@@ -15,46 +15,50 @@
 
     <div>
         <!-- MENU DE NAVEGACIÓN -->
-        <ul class="nav justify-content-between sticky-top sticky-separado">
-            <div class="nav">
+        <ul class="nav flex-nowrap justify-content-between sticky-top sticky-separado ml-3 mr-3 p-0">
+
+            <div class="nav flex-shrink-0">
                 <a class="navbar cristal" href="index.html">
                     <img src="assets/img/logo/nuf_logo_black.png" alt="Logotipo NUF" width="50">
                 </a>
-                <br>
             </div>
-            <ul class="nav cristal">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">INICIO</a>
+
+            <ul class="nav cristal mx-auto text-nowrap">
+                <li class="nav-item flex-shrink-0">
+                    <a class="nav-link p-2" href="#">INICIO</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#lineup">LINEUP</a>
+                <li class="nav-item flex-shrink-0">
+                    <a class="nav-link p-2" href="#lineup">LINEUP</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#tickets">TICKETS</a>
+                <li class="nav-item flex-shrink-0">
+                    <a class="nav-link p-2" href="#tickets">TICKETS</a>
                 </li>
             </ul>
 
-            <li class="nav-item dropdown cristal">
+            <li class="nav-item dropdown cristal flex-shrink-0">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                     aria-expanded="false">ES</a>
-                <div class="dropdown-menu ">
+                <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">EUS</a>
                 </div>
             </li>
         </ul>
 
         <!-- CONTENEDOR HERO-->
-        <div class="bg-diagonal-gradient">
+        <div class="bg-diagonal-gradient d-flex align-items-end">
             <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-12 col-lg-9">
+                <div class="row align-items-end mb-5">
+
+                    <div class="col-12 col-lg-9 col-md-8 text-center text-lg-left">
                         <h1 class="header-hero">Nafarroa<br>Urban<br>Fest</h1>
                         <p class="header-sub">El festival de Navarra que te hará vibrar.</p>
                     </div>
-                    <div class="col-12 col-lg-3 d-flex justify-content-lg-end mt-3 mt-lg-0 pb-3">
-                        <a class="btn btn-primary btn-lg" href="#tickets">TICKETS</a>
 
+                    <div
+                        class="col-12 col-lg-3 col-md-2 d-flex justify-content-center justify-content-lg-end align-items-center mt-3 mt-lg-0 **button-col-align**">
+                        <a class="btn btn-primary btn-xl font-weight-bold" href="#tickets">TICKETS</a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -63,7 +67,7 @@
 
             <div class="row align-items-center">
 
-                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                <div class="col-lg-6 mb-4 mb-md-0">
                     <div class="video-background-container rounded shadow-lg">
 
                         <video controls playsinline class="video-nafarroa" width="100%">
