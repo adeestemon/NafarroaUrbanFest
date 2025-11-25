@@ -19830,6 +19830,7 @@ a.text-dark:hover, a.text-dark:focus {
   background: linear-gradient(165deg, #111 10%, #562134 40%, #111 65%);
   color: #fff;
   min-height: 80vh;
+  max-height: 80vh;
   margin-top: -50px;
 }
 
