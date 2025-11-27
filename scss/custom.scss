@@ -1,4 +1,7 @@
 // Custom.scss
+@use "../node_modules/@fortawesome/fontawesome-free/scss/variables"
+with ($font-path: "../assets/webfonts"
+);
 @import "custom-variables.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
@@ -61,9 +64,6 @@
     }
 }
 
-
-
-
 .idioma {
     background-color: $menu-color;
     backdrop-filter: blur(50px);
@@ -79,8 +79,9 @@
 #idioma.oculto {
     opacity: 0;
 }
-.activado{
-    color:white;
+
+.activado {
+    color: white;
 }
 
 #idioma .dropdown-toggle.oculto {
@@ -122,8 +123,6 @@
         }
     }
 }
-
-
 
 .bg-burdeos {
     background-color: $burdeos;
