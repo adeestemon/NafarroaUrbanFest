@@ -1,3 +1,7 @@
+// Antes
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
 /*Colores*/
 $burdeos: #562134;
 $negro: #111;
@@ -5,18 +9,18 @@ $blanco: #fff;
 
 $body-bg: $negro;
 $body-color: $blanco;
+
 $menu-color: rgba(255, 255, 255, 0.533);
 $blur-intensity : 50px;
-$primary: $burdeos;
 
 $colores-personalizados: (
-    "mi-marca": #562134,
+    "color-principal": $burdeos,
+    "color-oscuro": $negro,
+    "color-claro":$blanco
 );
 
-$theme-colors: (
-    "primary": #fff,
-    "danger": #ff4136
-);
+$theme-colors: map-merge($theme-colors, $colores-personalizados);
+
 
 // HERO DEGRADADO
 $cabecera: linear-gradient(165deg, $negro 10%, $burdeos 40%, $negro 65%);

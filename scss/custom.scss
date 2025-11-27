@@ -2,10 +2,13 @@
 @use "../node_modules/@fortawesome/fontawesome-free/scss/variables"
 with ($font-path: "../assets/webfonts"
 );
-@import "custom-variables.scss";
+
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
+
+@import "custom-variables.scss";
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 /*Menú de navegación*/
@@ -114,19 +117,14 @@ with ($font-path: "../assets/webfonts"
             color: white;
             padding: 0.3rem 1rem;
             font-weight: bold;
-
-            &:hover,
-            &:focus {
-                background-color: rgba(255, 255, 255, 0.5);
-                color: #000;
-            }
         }
     }
 }
 
-.bg-burdeos {
-    background-color: $burdeos;
-
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: transparent !important;
+    color: #fff !important;
 }
 
 .sticky-separado {
