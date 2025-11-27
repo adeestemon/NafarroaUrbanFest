@@ -25,23 +25,24 @@
 
             <ul class="nav cristal mx-auto text-nowrap">
                 <li class="nav-item flex-shrink-0">
-                    <a class="nav-link p-2" href="#">INICIO</a>
+                    <a class="nav-link p-2 subrayar" href="#">INICIO</a>
                 </li>
                 <li class="nav-item flex-shrink-0">
-                    <a class="nav-link p-2" href="#lineup">LINEUP</a>
+                    <a class="nav-link p-2 subrayar" href="#lineup">LINEUP</a>
                 </li>
                 <li class="nav-item flex-shrink-0">
-                    <a class="nav-link p-2" href="#tickets">TICKETS</a>
+                    <a class="nav-link p-2 subrayar" href="#tickets">TICKETS</a>
                 </li>
             </ul>
 
-            <li class="nav-item dropdown cristal flex-shrink-0">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                    aria-expanded="false">ES</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">EUS</a>
-                </div>
-            </li>
+       <li class="nav-item dropdown cristal flex-shrink-0">
+    <a class="nav-link dropdown-toggle" id="idioma" data-toggle="dropdown" href="#" role="button">ES</a>
+    <div class="dropdown-menu idioma">
+        <a class="dropdown-item activado" href="#">ES</a>
+        <a class="dropdown-item" href="#">EUS</a>
+    </div>
+</li>
+
         </ul>
 
         <!-- CONTENEDOR HERO-->
@@ -70,7 +71,8 @@
                 <div class="col-lg-6 mb-4 mb-md-0">
                     <div class="video-background-container rounded shadow-lg">
 
-                        <video controls playsinline class="video-nafarroa" width="100%" poster="assets/video/portada-video.png">
+                        <video controls playsinline class="video-nafarroa" width="100%"
+                            poster="assets/video/portada-video.png">
                             <source src="assets/video/NafarroaUrbanFest.mp4" type="video/mp4">
                             <source src="assets/video/NafarroaUrbanFest.webm" type="video/webm">
                             Tu navegador no soporta la reproducción de video.
@@ -398,6 +400,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <script>
+        $('#idioma').parent('.dropdown').on('shown.bs.dropdown', function () {
+            $(this).find('.dropdown-toggle').addClass('oculto'); // oculta el texto
+            $(this).addClass('no-background'); // quita fondo y sombra del li
+        });
+
+        $('#idioma').parent('.dropdown').on('hide.bs.dropdown', function () {
+            $(this).find('.dropdown-toggle').removeClass('oculto'); // muestra el texto de nuevo
+            $(this).removeClass('no-background'); // vuelve el fondo y sombra originales
+        });
+
+    </script>
+
 </body>
 
 </html>

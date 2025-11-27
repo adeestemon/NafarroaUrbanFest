@@ -19875,6 +19875,35 @@ a.text-dark:hover, a.text-dark:focus {
   height: auto;
 }
 
+.idioma {
+  background-color: rgba(255, 255, 255, 0.533);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  border-radius: 30px;
+  min-width: 1rem;
+  top: -47px !important;
+  left: -6px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*OCULTAR IDIOMA Y SE SUPORPONE EL MENU IDIOMA*/
+#idioma.oculto {
+  opacity: 0;
+}
+
+.activado {
+  color: white;
+}
+
+#idioma .dropdown-toggle.oculto {
+  opacity: 0;
+}
+
+.no-background {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 .selector-idioma .btn {
   background-color: rgba(255, 255, 255, 0.533);
   border-radius: 50px;
@@ -19912,6 +19941,10 @@ a.text-dark:hover, a.text-dark:focus {
 .btn-xl {
   padding: 1rem 2rem;
   font-size: 1.5rem;
+}
+
+.subrayar:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1000px) {
