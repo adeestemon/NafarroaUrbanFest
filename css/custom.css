@@ -19818,6 +19818,26 @@ a.text-dark:hover, a.text-dark:focus {
 }
 /*Colores*/
 /*Fuentes*/
+.fs-7 {
+  font-size: 2.5rem !important;
+}
+
+.fs-8 {
+  font-size: 2rem !important;
+}
+
+.fs-9 {
+  font-size: 1.75rem !important;
+}
+
+.fs-10 {
+  font-size: 1.5rem !important;
+}
+
+.fs-11 {
+  font-size: 1.25rem !important;
+}
+
 @font-face {
   font-family: "Aupa";
   src: url("../assets/fonts/Aupa-Bold.otf") format("opentype"), url("../assets/fonts/Aupa-Bold.ttf") format("truetype");
@@ -29462,26 +29482,29 @@ a.text-color-claro:hover, a.text-color-claro:focus {
 /*Menú de navegación*/
 .bg-diagonal-gradient {
   padding: 0.5rem;
-  background: linear-gradient(165deg, #111 10%, #562134 40%, #111 65%);
+  background: linear-gradient(165deg, #111 10%, #562134 40%, #111 63%);
   color: #fff;
   min-height: 80vh;
   max-height: 80vh;
   margin-top: -50px;
 }
 
+.fm-aupa {
+  font-family: "Aupa", sans-serif;
+}
+
+.fs-hero {
+  font-size: clamp(1rem, 14vw, 210px);
+  line-height: 0.8;
+  margin-top: 6rem;
+}
+
 .header-hero {
   text-align: left;
   margin-top: 6rem;
   margin-left: 5%;
-  font-size: clamp(1rem, 15vw, 220px);
+  font-size: clamp(1rem, 14vw, 210px);
   font-family: "Aupa", sans-serif;
-  line-height: 0.8;
-}
-
-.header-sub {
-  text-align: left;
-  margin-left: 5%;
-  font-size: 1.25rem;
 }
 
 .cristal {
@@ -29491,23 +29514,6 @@ a.text-color-claro:hover, a.text-color-claro:focus {
   border-radius: 50px;
   padding: 0.2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.logo-capsula {
-  background-color: rgba(255, 255, 255, 0.533);
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
-  border-radius: 50px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 0.25rem 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.logo-capsula img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .idioma {
@@ -29573,7 +29579,6 @@ a.text-color-claro:hover, a.text-color-claro:focus {
 
 .btn-xl {
   padding: 1rem 2rem;
-  font-size: 1.5rem;
 }
 
 .subrayar:hover {
@@ -29598,18 +29603,6 @@ a.text-color-claro:hover, a.text-color-claro:focus {
 @media (max-width: 1000px) {
   .bg-diagonal-gradient {
     min-height: 60vh;
-  }
-}
-@media (max-width: 764px) {
-  /* Centra los elementos de texto */
-  .header-hero,
-  .header-sub {
-    text-align: center;
-    margin-left: 0%;
-  }
-  /* Regla clave: Centra el contenedor del botón en pantallas medianas y pequeñas */
-  .button-col-align {
-    justify-content: center !important;
   }
 }
 @media (max-width: 576px) {

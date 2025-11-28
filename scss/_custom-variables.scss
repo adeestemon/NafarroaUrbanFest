@@ -18,12 +18,10 @@ $colores-personalizados: (
     "color-oscuro": $negro,
     "color-claro":$blanco
 );
-
 $theme-colors: map-merge($theme-colors, $colores-personalizados);
 
-
 // HERO DEGRADADO
-$cabecera: linear-gradient(165deg, $negro 10%, $burdeos 40%, $negro 65%);
+$cabecera: linear-gradient(165deg, $negro 10%, $burdeos 40%, $negro 63%);
 
 
 /*Fuentes*/
@@ -38,8 +36,21 @@ $font-size-sm: $font-size-base * .875 !default; // 14pxs
 
 $line-height-hero: 0.8; // Altura de línea para título Nafarroa Urban Fest
 
-$hero-font-size: clamp(1rem, 15vw, 220px); //¿¿??
+$hero-font-size: clamp(1rem, 14vw, 210px); 
 
+// Tamaños fuentes
+$custom-font-sizes: (
+  7: 2.5rem,
+  8: 2rem,
+  9: 1.75rem,
+  10: 1.5rem,
+  11: 1.25rem
+);
+@each $size, $value in $custom-font-sizes {
+  .fs-#{$size} {
+    font-size: $value !important;
+  }
+}
 // Fuente personalizada
 @font-face {
     font-family: 'Aupa';
