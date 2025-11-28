@@ -29614,6 +29614,6 @@ a.text-color-claro:hover, a.text-color-claro:focus {
 }
 @media (max-width: 576px) {
   .bg-diagonal-gradient {
-    min-height: 60vh;
+    min-height: auto;
   }
 }

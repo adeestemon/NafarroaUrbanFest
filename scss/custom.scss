@@ -179,6 +179,6 @@ with ($font-path: "../assets/webfonts"
 
 @media (max-width: 576px) {
     .bg-diagonal-gradient {
-        min-height: 60vh
+        min-height: auto;
     }
 }
