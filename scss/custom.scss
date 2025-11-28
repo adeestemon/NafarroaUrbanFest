@@ -141,6 +141,21 @@ with ($font-path: "../assets/webfonts"
     text-decoration: underline;
 }
 
+::selection {
+    background-color: $menu-color;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
+}
+.img-artistas img {
+    filter: grayscale(100%); 
+    transition: filter 0.8s ease-in-out; 
+}
+
+.img-artistas:hover img {
+    filter: grayscale(0%);
+}
+
 @media (max-width: 1000px) {
     .bg-diagonal-gradient {
         min-height: 60vh;
