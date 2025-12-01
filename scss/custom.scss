@@ -22,7 +22,7 @@ with ($font-path: "../assets/webfonts"
 }
 
 // Clases personalizadas
-.fm-aupa {
+.ff-aupa {
     font-family: $font-family-hero;
 }
 
@@ -59,6 +59,7 @@ with ($font-path: "../assets/webfonts"
     left: -6px !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 /*OCULTAR IDIOMA Y SE SUPORPONE EL MENU IDIOMA*/
 #idioma.oculto {
@@ -138,26 +139,63 @@ with ($font-path: "../assets/webfonts"
     filter: grayscale(0%);
 }
 
+//cursor
+.c-pointer {
+    cursor: pointer;
+}
+
+// animaciones
+.menu-animado .nav-link {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-animado .nav-link::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0;
+    left: 50%;
+    bottom: 8px;
+    background-color: #fff;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.menu-animado .nav-link:hover::after {
+    width: 40%;
+}
+
+.iconos-plataformas i {
+    transition: transform 0.3s ease, color 1.5s ease;
+}
+
+/* Spotify */
+.iconos-plataformas .fa-spotify:hover {
+    transform: scale(1.1) rotate(2deg);
+    color: #1DB954;
+}
+
+/* YouTube */
+.iconos-plataformas .fa-youtube:hover {
+    transform: scale(1.1) rotate(2deg);
+    color: #FF0000;
+}
+
+/* Apple Music */
+.iconos-plataformas .fa-itunes-note:hover {
+    transform: scale(1.1) rotate(2deg);
+    color: #A2AAAD;
+}
+
+
+
 @media (max-width: 1000px) {
     .bg-diagonal-gradient {
         min-height: 60vh;
     }
 }
-
-// @media (max-width: 764px) {
-
-//     /* Centra los elementos de texto */
-//     .header-hero,
-//     .header-sub {
-//         text-align: center;
-//         margin-left: 0%;
-//     }
-
-//     /* Regla clave: Centra el contenedor del botón en pantallas medianas y pequeñas */
-//     .button-col-align {
-//         justify-content: center !important;
-//     }
-// }
 
 @media (max-width: 576px) {
     .bg-diagonal-gradient {
