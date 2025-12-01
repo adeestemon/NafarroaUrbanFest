@@ -6,6 +6,7 @@ function loadLanguage(lang) {
     fetch(`../i18n/${lang}.json`)
         .then(res => res.json())
         .then(translations => {
+            console.log(translations)
             document.querySelectorAll("[data-i18n]").forEach(el => {
                 const key = el.getAttribute("data-i18n");
                 if (translations[key]) el.textContent = translations[key];
