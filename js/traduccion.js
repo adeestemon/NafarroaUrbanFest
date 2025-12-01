@@ -3,7 +3,7 @@
 let currentLang = localStorage.getItem("lang") || "es";
 
 function loadLanguage(lang) {
-    fetch(`./i18n/${lang}.json`)
+fetch(`/NafarroaUrbanFest/i18n/${lang}.json`)
         .then(res => res.json())
         .then(translations => {
             console.log(translations)
