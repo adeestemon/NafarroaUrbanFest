@@ -29484,7 +29484,7 @@ a.text-color-claro:hover, a.text-color-claro:focus {
   padding: 0.5rem;
   background: linear-gradient(165deg, #111 10%, #562134 40%, #111 63%);
   color: #fff;
-  min-height: 80vh;
+  min-height: 95vh;
   max-height: 80vh;
   margin-top: -50px;
 }
@@ -29579,10 +29579,6 @@ a.text-color-claro:hover, a.text-color-claro:focus {
 
 .btn-xl {
   padding: 1rem 2rem;
-}
-
-.subrayar:hover {
-  text-decoration: underline;
 }
 
 ::selection {

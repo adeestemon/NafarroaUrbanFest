@@ -16,9 +16,9 @@ with ($font-path: "../assets/webfonts"
     padding: 0.5rem;
     background: $cabecera;
     color: #fff;
-    min-height: 80vh;
+    min-height: 95vh;
     max-height: 80vh;
-    margin-top: -50px;
+    margin-top:-50px;
 }
 
 // Clases personalizadas
@@ -119,9 +119,6 @@ with ($font-path: "../assets/webfonts"
     padding: 1rem 2rem;
 }
 
-.subrayar:hover {
-    text-decoration: underline;
-}
 
 ::selection {
     background-color: $menu-color;
