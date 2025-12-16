@@ -25,14 +25,13 @@ $cabecera: linear-gradient(165deg, $negro 10%, $burdeos 40%, $negro 63%);
 
 
 /*Fuentes*/
-$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", 
+                        "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base: $font-family-sans-serif;
 $font-family-hero: 'Aupa', sans-serif;
 
-
-
-$line-height-hero: 0.8; // Altura de línea para título Nafarroa Urban Fest
+$line-height-hero: 0.8;
 
 $hero-font-size: clamp(1rem, 14vw, 210px); 
 
